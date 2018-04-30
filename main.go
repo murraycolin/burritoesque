@@ -8,15 +8,15 @@ import (
 )
 
 func main() {
-
 	client := &http.Client{
 		Timeout: 15 * time.Second,
 	}
 
-	request, err := http.NewRequest("GET", "https://www.cmurrayclient.com/", nil)
+	request, err := http.NewRequest("GET", "https://www.murraycolin.com/", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	request.Header.Set("User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0")
 	t := time.Now().Hour()
 	tf := float64(t)
@@ -26,7 +26,8 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		index = index + .005
+
 		defer response.Body.Close()
+		index = index + .005
 	}
 }

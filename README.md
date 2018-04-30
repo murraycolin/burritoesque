@@ -14,6 +14,10 @@ Very much in progress. A simple synthetic test that is supposed to seem like hum
 - Automate
 - Add error reporting and regression testing
 
+## Considerations
+
+- Do I really need to import math? Can I find a way to have waves in traffic?
+
 ## Credits
 
 - https://www.devdungeon.com/content/web-scraping-go

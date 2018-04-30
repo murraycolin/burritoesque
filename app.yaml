@@ -1,7 +1,6 @@
 runtime: go
 env: flex
-handlers:
-- url: /
+
 manual_scaling:
   instances: 1
 resources:
